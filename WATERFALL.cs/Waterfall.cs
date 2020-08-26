@@ -254,22 +254,7 @@ namespace WindowsGSM.Plugins
         // - Get Local server version
         public string GetLocalBuild()
         {
-            // Get local version and build by version_history.json
-            const string VERSION_JSON_FILE = "version_history.json";
-            var versionJsonFile = ServerPath.GetServersServerFiles(_serverData.ServerID, VERSION_JSON_FILE);
-            if (!File.Exists(versionJsonFile))
-            {
-                Error = $"{VERSION_JSON_FILE} does not exist";
-                return string.Empty;
-            }
-
-            var json = File.ReadAllText(versionJsonFile);
-            var text = JObject.Parse(json)["currentVersion"].ToString();
-            var match = new Regex(@"git-Waterfall-(\d{1,}) \(MC: (.{1,})\)").Match(text);
-            var build = match.Groups[1].Value;
-            var version = match.Groups[2].Value;
-
-            return $"{version}/{build}";
+            return "";
         }
 
 
