@@ -16,10 +16,10 @@ namespace WindowsGSM.Plugins
         // - Plugin Details
         public Plugin Plugin = new Plugin
         {
-            name = "WindowsGSM.WATERFALL", // WindowsGSM.XXXX
+            name = "WindowsGSM.Waterfall", // WindowsGSM.XXXX
             author = "1stian",
             description = "Adds waterfall proxy support for Minecraft: Paper servers.",
-            version = "1.0",
+            version = "1.1",
             url = "https://github.com/1stian/WindowsGSM.WATERFALL", // Github repository link (Best practice)
             color = "#ffffff" // Color Hex
         };
